@@ -2,7 +2,7 @@ pipeline {
     agent any // Runs on any available Jenkins agent with Docker installed
 
     environment {
-        DOCKER_HUB_CREDENTIALS = credentials('docker-hub-credentials') // Jenkins credentials ID for Docker Hub
+        DOCKER_HUB_CREDENTIALS = credentials('docker-hub-credential') // Jenkins credentials ID for Docker Hub
         IMAGE_NAME = "nirapad9/frontend" // Replace with your Docker Hub image name
         IMAGE_TAG = "latest" // Replace with your desired tag
         CONTAINER_NAME = "frontend-container" // Name of the container to deploy
